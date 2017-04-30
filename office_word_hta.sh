@@ -19,14 +19,14 @@ class MetasploitModule < Msf::Exploit::Remote
         in Oct 2016. This module was created by reversing a public
         malware sample.
       },
-      'Author'         =>
+      'Author'         =>  @h4ckzu5
         [
-          'Haifei Li', # vulnerability analysis
+          'Haifei Li', 
           'ryHanson',
           'wdormann',
           'DidierStevens',
           'vysec',
-          'Nixawk' # module developer
+          'Nixawk' 
         ],
       'License'        => MSF_LICENSE,
       'References'     => [
@@ -76,10 +76,7 @@ class MetasploitModule < Msf::Exploit::Remote
   end
 
   def create_ole_ministream_data
-    # require 'rex/ole'
-    # ole = Rex::OLE::Storage.new('cve-2017-0199.bin', Rex::OLE::STGM_READ)
-    # ministream = ole.instance_variable_get(:@ministream)
-    # ministream_data = ministream.instance_variable_get(:@data)
+    
 
     ministream_data = ""
     ministream_data << "01000002090000000100000000000000" # 00000000: ................
