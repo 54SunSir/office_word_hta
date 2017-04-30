@@ -1,5 +1,5 @@
 # Modulo adicional a metasploit
-# office_word_hta exploit genera hta malicioso
+# Microsoft Office Word Malicious Hta Execution
 # By h4ckzu5
 
 $ cd /usr/share/metasploit-framework/modules/exploits/windows/fileformat
